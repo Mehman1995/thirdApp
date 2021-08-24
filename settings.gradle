@@ -1,2 +1,4 @@
 rootProject.name = 'thirdApp'
+include 'src:main:attachments'
+findProject(':src:main:attachments')?.name = 'attachments'
 
