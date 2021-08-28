@@ -1,7 +1,7 @@
-class Comment (
-    val count: Int? = 0,
-    val canPost: Boolean = true,
-    val groupsCanPost: Boolean = true,
-    val canClose: Boolean = true,
-    val canOpen: Boolean = true
+data class Comment (
+    val id: Long,
+    val postId: Long,
+    val fromId: Long,
+    val date: Int,
+    val text: String
 )
